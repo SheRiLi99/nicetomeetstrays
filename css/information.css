@@ -1,0 +1,141 @@
+.main-nav a.information-button{
+    color:#FFB091 ;
+}
+.main-nav a.information-button::after{
+    width: 113px;
+}
+/* ------------------------------------------------------店家 */
+body{
+    background-image: url(../pic/information-baclground-01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -600px;
+}
+.store{
+    width: 100%;
+    padding-top: 150px;
+    margin-bottom: 100px;
+}
+.store-main-title{
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 36px;
+    letter-spacing: 5px;
+    color: #A13630;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.store-container{
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.store-card{
+    position: relative;
+    width: 25%;
+}
+.store-pic{
+    margin-bottom: 40px; 
+}
+.store-pic img{
+    display: block;
+    width: 100%;
+    border-radius: 150px 150px 30px 30px;
+    box-shadow:  4px 4px 8px rgba(0, 0, 0, 0.3);  
+}
+.store-title{
+    position: absolute;
+    top: 40px;
+    left: 110px;
+    text-indent: 5px;
+    letter-spacing: 5px;
+    font-size: 30px;
+    color: #ffffff;
+}
+.store-txt{
+    padding: 0px 15px;
+    font-size: 18px;
+    line-height: 36px;
+    color: #8B4F47;
+    letter-spacing: 2px;
+}
+/* --------------------------------------------各店成員介紹 */
+.member{
+    width: 100%;
+}
+.member-title{
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: #A13630;
+}
+.member-container{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.member-item-first{
+    position: relative;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.member-pic-first{
+    width: 30%;
+}
+.member-pic-first img{
+    display: block;
+    width: 100%;
+    border-radius: 100px 0px 100px 0px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+.member-name-first{
+    position: absolute;
+    bottom: -25px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    text-indent: 2px;
+    color: #ffffff;
+    background-color: #FFB091;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.member-item-second{
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.member-pic-second{
+    width: 30%;
+}
+.member-pic-second img{
+    display: block;
+    width: 100%;
+    border-radius: 0px 100px 0px 100px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+.member-name-second{
+    position: relative;
+    bottom: 25px;
+    left: 210px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    text-indent: 2px;
+    color: #ffffff;
+    background-color: #FFB091;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);   
+}
+
+

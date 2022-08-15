@@ -1,0 +1,6 @@
+.main-nav a.contact-button{
+    color:#FFB091 ;
+}
+.main-nav a.contact-button::after{
+    width: 113px;
+}

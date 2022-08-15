@@ -1,0 +1,6 @@
+.main-nav a.about-button{
+    color:#FFB091 ;
+}
+.main-nav a.about-button::after{
+    width: 113px;
+}

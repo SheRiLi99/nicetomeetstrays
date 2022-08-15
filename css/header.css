@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+.sr-only{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+header{
+    font-family:'cwTeXYen', sans-serif;
+}
+.nav-bar{
+    width: 100%;
+    background-color: #FFF5ED;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: 10%;
+}
+.logo img{
+    display: block;
+    width: 112px;
+    height: 30px;
+    padding: 20px 0px;
+}
+#menu-switch{
+    display: none;
+}
+@media screen and (max-width:1024px) {
+    .HB{
+        width: 40px;
+        height: 40px;
+        background-color: #8B4F47;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        margin: auto 10% auto 0px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    }
+    .HB span{
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 2px;    
+    }
+    .HB span:nth-child(1){
+        transition: top .2s .1s , transform .2s;
+        top: 9px;
+    }
+    .HB span:nth-child(2){
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        opacity: 1;
+        transition: .1s .1s;
+    }
+    .HB span:nth-child(3){
+        transition: bottom .2s .1s, transform .2s;
+        bottom: 9px;
+    }
+    #menu-switch:checked ~ .nav-bar .HB span:nth-child(2){
+        opacity: 0;
+        transition: .1s .1s;
+    }
+    #menu-switch:checked ~ .nav-bar .HB span:nth-child(1){
+        transition: top .2s , transform .2s .1s;
+        top: 19px;
+        transform: rotate(45deg);
+    }
+    #menu-switch:checked ~ .nav-bar .HB span:nth-child(3){
+        transition: bottom .2s , transform .2s .1s;
+        bottom: 19px;
+        transform: rotate(-45deg);
+    }
+    .main-nav{
+        display: none;
+        background-color: rgba(139, 79, 71, 0.7) ;
+        width: 100%;
+    }
+    .main-nav a{
+        text-align: center;
+        display: block;
+        font-size: 22px;
+        text-decoration: none;
+        color: #FFF5ED;
+        padding: 25px;
+        letter-spacing: 2px;
+    }
+    .main-nav a + a{
+        border-top: 1px solid #FFF5ED;
+    }
+    .main-nav a:hover{
+        background-color: rgba(139, 79, 71, 0.9) ;
+    }
+    #menu-switch:checked ~ .nav-bar .main-nav{
+        display: block;
+    }
+}
+@media screen and (min-width:1024px) {
+    .main-nav{
+        margin-right: 10%;
+        display: flex;
+    }
+    .main-nav a{
+        display: block;
+        font-size: 20px;
+        padding: 25px 20px;
+        color: #8B4F47;
+        text-decoration: none;
+        position: relative;
+    }
+    .main-nav a:hover{
+        color: #FFB091;
+    }
+    .main-nav a::before{
+        content: '';
+        position: absolute;
+        bottom: 25px;
+        left:100% ;
+        width: 2px;
+        height: 12px;
+        background-color: #FFB091;
+        transform: rotate(30deg);
+    }
+    .main-nav a::after{
+        content: '';
+        position: absolute;
+        bottom: 25px;
+        right:1px ;
+        width: 0px;
+        height: 2px;
+        background-color: #FFB091;
+        transition: width .7s;
+    }
+    .main-nav a:hover::after{
+        width: 113px;
+        transition: width .7s;
+    }
+}
+

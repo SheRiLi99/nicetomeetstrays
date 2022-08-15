@@ -1,0 +1,540 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+/* ----------------------------------------------------首頁 */
+.index{
+    background-image: url(../pic/index-background04.png);
+        background-repeat: no-repeat;
+        background-position: 50% 0%;
+        padding-top: 70px;
+        width: 100%;
+        height: 1450px;
+}
+.index-pic{
+    width: 280px;
+    margin: 200px auto;
+}
+.index-pic img{
+    padding-bottom: 10px;
+    display: block;
+    width: 100%;    
+}
+.slogan{
+    text-align: center;
+    color: #8B4F47;
+    font-size: 26px;
+    letter-spacing: 2px;
+    font-family:'cwTeXYen', sans-serif;
+}
+@media screen and (min-width:768px) {
+    .index{
+        background-size: cover;
+    }
+}
+@media screen and (min-width:1024px) {
+    .index{
+        background-image: url(../pic/index-background.png),
+                        url(../pic/index-background02.png);
+        background-repeat: no-repeat,no-repeat;
+        background-size: auto,contain;
+        background-position:0px 0px,0px 100% ;
+    }
+    .index-pic{
+        margin: 200px 40% 0% 60%;
+    }
+}
+@media screen and (min-width:1200px) {
+    .index-pic{
+        margin: 200px 35% 0% 65%;
+    }
+}
+/* ---------------------------------------------------關於我們 */
+.about-container{
+    position: absolute;
+    top:120%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.about-card{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.about-title{
+    padding-top: 40px;
+    font-family: 'cwTeXYen', sans-serif;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 5px;
+    color: #9F3630;
+}
+.about-txt{
+    padding-top: 30px;
+    padding-bottom: 60px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 3px;
+    color: #8B4F47;
+    font-family: 'cwTeXYen', sans-serif;
+}
+@media screen and (min-width:1024px) {
+    .about-card{
+        width: 475px; 
+        border-radius: 20px;
+    }
+}
+/* ----------------------------------------------------等家浪浪 */
+.strays-container{
+    background-image: url(../pic/index-background03.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.strays-title{
+    padding-top: 10px;
+    position: relative;
+    z-index: 4;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 5px;
+    color: #9F3630;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.strays-item-first{
+    background-color: rgba(255, 255, 255, 0.6);
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    z-index: 3;
+}
+.strays-more{
+    position: absolute;
+    top: 100%;
+    left: 85%;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    background-color: #7FCCDA;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.strays-more:hover{
+    background-color: #FFB091;
+}
+.strays-button{
+    border: none;
+    background-color: transparent;
+    margin-top:200px;
+    font-size:100px ;
+    color:#7FCCDA ;
+}
+.strays-card-first{
+    background-color: #ffffff;
+    overflow: hidden;
+    border: 3px solid #FFB091 ;
+    border-radius: 20px;   
+    position: relative;
+    border-image: url();
+}
+.strays-card-first a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.strays-pic img{    
+    display: block;
+    width: 100%;
+}
+.strays-name-first{    
+    border-radius: 20px;
+    margin: 0px auto;
+    width: 100px;
+    padding: 10px 0px;
+    text-indent: 5px;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #FFB091 ;
+}
+.strays-txt-first{
+    background-color: #ffffff;
+    color: #8B4F47;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    text-align: center; 
+    padding:25px 0px ;
+}
+.strays-item-second{
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: -530px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+.strays-card-second{
+    background-color: #ffffff;
+    overflow: hidden;
+    margin: 0px 150px;
+    border: 2px solid #7FCCDA ;
+    border-radius: 20px;   
+}
+.strays-name-second{    
+    border-radius: 20px;
+    margin: 0px auto;
+    width: 100px;
+    padding: 10px 0px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-indent: 5px;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #7FCCDA ;
+}
+.strays-txt-second{
+    background-color: #ffffff;
+    color: #8B4F47;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    text-align: center; 
+    padding:25px 0px ;
+}
+.strays-item-third{
+    margin-top: -420px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 1;
+}
+.strays-card-third{
+    background-color: #ffffff;
+    overflow: hidden;
+    border: 1px solid #7FCCDA ;
+    border-radius: 20px;   
+}
+.strays-name-third{    
+    border-radius: 20px;
+    margin: 0px auto;
+    width: 100px;
+    padding: 10px 0px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-indent: 5px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #7FCCDA ;
+}
+.strays-txt-third{
+    background-color: #ffffff;
+    color: #8B4F47;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    text-align: center; 
+    padding:25px 0px ;
+}
+/* ------------------------------------------------------精選菜單 */
+.menu{
+    margin-top: 100px;
+    background-image: url(../pic/index-menu-background.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 600px;
+}
+.menu-container{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding-top: 300px;
+    position: relative;
+}
+.menu-maintitle{
+    margin-bottom: 50px;
+    font-size: 36px;
+    letter-spacing: 5px;
+    color: #9F3630;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.menu-item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-food{
+    margin: 0px 50px;
+    position: relative;
+    top: 100px;
+}
+.menu-pic img{
+    width: 100%;
+    display: block;
+    border-radius: 150px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);   
+}
+.menu-title{
+    width: 120px;
+    text-align: center;
+    font-size: 30px;
+    color: #9F3630;
+    margin: 40px auto 20px auto;
+    padding: 10px;
+    border-bottom: #FFB091 3px solid;
+    letter-spacing: 2px;
+    text-indent: 2px;
+}
+.menu-txt{
+    text-align: center;
+    font-size: 20px;
+    line-height: 60px;
+    color: #8B4F47;
+    letter-spacing: 2px;
+}
+.menu-dessert{
+    margin: 0px 50px;
+}
+.menu-drink{
+    margin: 0px 50px;
+    position: relative;
+    top: -100px;
+}
+.menu-container a{
+    position: absolute;
+    top: 104%;
+    left: 84%;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    background-color: #7FCCDA;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.menu-container a:hover{
+    background-color: #FFB091;
+}
+/* ---------------------------------------------周邊商品 */
+.commodity{
+    margin-top: -200px;
+    padding-bottom: 100px;
+    background-image: url(../pic/index-commodity-background.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position:-100px 550px ;
+}
+.commodity-container{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.commodity-maintitle{
+    margin-bottom: 80px;
+    font-size: 36px;
+    letter-spacing: 5px;
+    color: #9F3630;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.commodity-item-first{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px ;
+}
+.commodity-item-second{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: 30px ;
+}
+.commodity-pic{
+    margin: 0px 20px;
+}
+.commodity-pic img{
+    display: block;
+    width: 100%;
+    border-radius: 0px 0px 80px 0px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.commodity-clothes{
+    display: inline;
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    letter-spacing: 5px;
+    position: relative;
+    z-index: 5;
+    left: 195px;
+    bottom: 50px;
+}
+.commodity-clothes::before{
+    content: '';
+    width: 150px;
+    height: 80px;
+    background-color: #FFB091;
+    position: absolute;
+    z-index: -1;
+    left: -45px;
+    bottom: -25px;
+    border-radius: 80px 0px 80px 0px;
+    transition: height .8s;
+}
+.commodity-clothes:hover:before{
+    content: '';
+    width: 150px;
+    height: 300px;
+    background-color: #FFB091;
+    position: absolute;
+    z-index: -1;
+    left: -45px;
+    bottom: -25px;
+    border-radius: 80px 0px 80px 0px;
+    transition: height .8s;
+}
+.commodity-bag{
+    display: inline;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 5px;
+    position: relative;
+    z-index: 5;
+    left: 580px;
+    bottom: 50px;
+}
+.commodity-bag::before{
+    content: '';
+    width: 150px;
+    height: 80px;
+    background-color: #FFB091;
+    position: absolute;
+    z-index: -1;
+    left: -30px;
+    bottom: -25px;
+    border-radius: 80px 0px 80px 0px;
+    transition: height .8s;
+}
+.commodity-bag:hover:before{
+    content: '';
+    width: 150px;
+    height: 300px;
+    background-color: #FFB091;
+    position: absolute;
+    z-index: -1;
+    left: -30px;
+    bottom: -25px;
+    border-radius: 80px 0px 80px 0px;
+    transition: height .8s;
+}
+.commodity-hat{
+    display: inline;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 5px;
+    position: relative;
+    z-index: 5;
+    left: 600px;
+    bottom: 50px;
+}
+.commodity-hat::before{
+    content: '';
+    width: 150px;
+    height: 80px;
+    background-color: #FFB091;
+    position: absolute;
+    z-index: -1;
+    left: -50px;
+    bottom: -25px;
+    border-radius: 80px 0px 80px 0px;
+    transition: height .8s;
+}
+.commodity-hat:hover:before{
+    content: '';
+    width: 150px;
+    height: 300px;
+    background-color: #FFB091;
+    position: absolute;
+    z-index: -1;
+    left: -50px;
+    bottom: -25px;
+    border-radius: 80px 0px 80px 0px;
+    transition: height .8s;
+}
+.commodity-more{
+    position: relative;
+    left: 86%;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    background-color: #7FCCDA;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.commodity-more:hover{
+    background-color: #FFB091;
+}
+/* ------------------------------------------------ 店家資訊 */
+.information{
+    margin-bottom: 200px;
+}
+.information-main-title{
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 36px;
+    letter-spacing: 5px;
+    color: #9F3630;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.information-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.information-card-taichung{
+    position: relative;
+    top: 50px;
+}
+.information-card-tainan{
+    position: relative;
+    top: 100px;
+}
+.information-pic img{
+    display: block;
+    width: 100%;
+    border-radius: 0px 100px;
+}
+.information-title{
+    border-radius: 20px;
+    margin: 0px auto;
+    width: 100px;
+    padding: 10px 0px;
+    text-indent: 5px;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #FFB091 ;
+    position: relative;
+    top: -30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.information-txt{
+    padding: 0px 50px;
+    font-size: 20px;
+    line-height: 40px;
+    color: #8B4F47;
+    letter-spacing: 2px;
+}
