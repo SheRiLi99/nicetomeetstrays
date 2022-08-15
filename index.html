@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>遇見浪浪</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
 </head>
 <body>
     <h1 class="sr-only">遇見浪浪</h1>
@@ -59,53 +59,73 @@
         </div>
     </section>
 <!-- ----------------------------------------------------------等家浪浪 -->
-    <section class="strays-container">
+    <section class="strays">
         <h2 class="strays-title">等家浪浪</h2>
-        <div class="strays-item-first">
-            <button class="strays-button"><</button>
-            <div class="strays-card-first">
-                <div class="strays-pic">
-                    <img src="pic/strays-01.png" alt="">
-                </div>
-                <h3 class="strays-name-first">憨吉</h3>
-                <p class="strays-txt-first">約2019年6月出生<br>男生/已結紮<br>慢熟型</p>
+        <ul class="strays-container">
+            <li class="active">
+                <img src="pic/strays-01.png" alt="">
+                <h3 class="strays-name">憨吉</h3>
+                <p class="strays-txt">約2019年6月出生<br>男生/已結紮<br>慢熟型</p>
                 <a href="strays.html"></a>
-            </div>
-            <button class="strays-button">></button>
-            <a class="strays-more" href="strays.html">更多浪浪</a>
-        </div>
-        <div class="strays-item-second">
-            <div class="strays-card-second">
-                <div class="strays-pic">
-                    <img src="pic/strays-04.png" alt="">
-                </div>
-                <h3 class="strays-name-second">憨吉</h3>
-                <p class="strays-txt-second">約2019年6月出生<br>男生/已結紮<br>慢熟型</p>
-            </div>
-            <div class="strays-card-second">
-                <div class="strays-pic">
-                    <img src="pic/strays-05.png" alt="">
-                </div>
-                <h3 class="strays-name-second">憨吉</h3>
-                <p class="strays-txt-second">約2019年6月出生<br>男生/已結紮<br>慢熟型</p>
-            </div>
-        </div>
-        <div class="strays-item-third">
-            <div class="strays-card-third">
-                <div class="strays-pic">
-                    <img src="pic/strays-02.png" alt="">
-                </div>
-                <h3 class="strays-name-third">憨吉</h3>
-                <p class="strays-txt-third">約2019年6月出生<br>男生/已結紮<br>慢熟型</p>
-            </div>
-            <div class="strays-card-third">
-                <div class="strays-pic">
-                    <img src="pic/strays-03.png" alt="">
-                </div>
-                <h3 class="strays-name-third">憨吉</h3>
-                <p class="strays-txt-third">約2019年6月出生<br>男生/已結紮<br>慢熟型</p>
-            </div>
-        </div>
+            </li>
+            <li>
+                <img src="pic/strays-02.png" alt="">
+                <h3 class="strays-name">樂多</h3>
+                <p class="strays-txt">約2022年6月出生<br>女生 /未結紮<br>親人活潑</p>
+                <a href="strays.html"></a>
+            </li>
+            <li>
+                <img src="pic/strays-03.png" alt="">
+                <h3 class="strays-name">船長</h3>
+                <p class="strays-txt">約2020年出生<br>男生/已結紮<br>親人親狗親貓</p>
+                <a href="strays.html"></a>
+            </li>
+            <li>
+                <img src="pic/strays-04.png" alt="">
+                <h3 class="strays-name">布丁</h3>
+                <p class="strays-txt">約2020年7月出生<br>女生/已結紮<br>親人愛撒嬌</p>
+                <a href="strays.html"></a>
+            </li>
+            <li>
+                <img src="pic/strays-05.png" alt="">
+                <h3 class="strays-name">菜菜</h3>
+                <p class="strays-txt">約2021年10月出生<br>女生/已結紮<br>環境適應中</p>
+                <a href="strays.html"></a>
+            </li>
+        </ul>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/slick.js"></script>
+        <script>
+            $('.strays-container').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 4000, 
+                responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true
+                    }
+                },{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },{
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+            
+        </script>
+        
     </section>
 <!-- ----------------------------------------------------------精選菜單 -->
     <section class="menu">

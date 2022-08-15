@@ -9,8 +9,8 @@
         height: 1450px;
 }
 .index-pic{
-    width: 280px;
-    margin: 200px auto;
+    width: 200px;
+    margin: 150px auto;
 }
 .index-pic img{
     padding-bottom: 10px;
@@ -28,6 +28,9 @@
     .index{
         background-size: cover;
     }
+    .index-pic{
+        width: 230px;
+    }
 }
 @media screen and (min-width:1024px) {
     .index{
@@ -38,12 +41,21 @@
         background-position:0px 0px,0px 100% ;
     }
     .index-pic{
+        width: 280px;
         margin: 200px 40% 0% 60%;
     }
 }
 @media screen and (min-width:1200px) {
     .index-pic{
+        width: 280px;
         margin: 200px 35% 0% 65%;
+    }
+    .slogan{
+        text-align: center;
+        color: #8B4F47;
+        font-size: 26px;
+        letter-spacing: 2px;
+        font-family:'cwTeXYen', sans-serif;
     }
 }
 /* ---------------------------------------------------關於我們 */
@@ -85,12 +97,6 @@
     }
 }
 /* ----------------------------------------------------等家浪浪 */
-.strays-container{
-    background-image: url(../pic/index-background03.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    
-}
 .strays-title{
     padding-top: 10px;
     position: relative;
@@ -102,57 +108,29 @@
     color: #9F3630;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
-.strays-item-first{
-    background-color: rgba(255, 255, 255, 0.6);
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    z-index: 3;
-}
-.strays-more{
-    position: absolute;
-    top: 100%;
-    left: 85%;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 24px;
-    letter-spacing: 2px;
-    color: #ffffff;
-    background-color: #7FCCDA;
-    border-radius: 20px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-.strays-more:hover{
-    background-color: #FFB091;
-}
-.strays-button{
-    border: none;
-    background-color: transparent;
-    margin-top:200px;
-    font-size:100px ;
-    color:#7FCCDA ;
-}
-.strays-card-first{
+.strays-container{
+    width: 300px;
+    margin: 0 auto;
+  }
+.strays-container li{
     background-color: #ffffff;
     overflow: hidden;
     border: 3px solid #FFB091 ;
-    border-radius: 20px;   
+    border-radius: 20px;  
+    transform: scale(0.8);
+    transition: .5s;
     position: relative;
-    border-image: url();
-}
-.strays-card-first a{
+  }
+.strays-container li:hover{
+    border: 3px solid #7FCCDA ;
+    transform: scale(0.9);
+    transition: .5s; 
+  }
+.strays-container li img{
     display: block;
     width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.strays-pic img{    
-    display: block;
-    width: 100%;
-}
-.strays-name-first{    
+  }
+.strays-name{    
     border-radius: 20px;
     margin: 0px auto;
     width: 100px;
@@ -164,7 +142,7 @@
     color: #ffffff;
     background-color: #FFB091 ;
 }
-.strays-txt-first{
+.strays-txt{
     background-color: #ffffff;
     color: #8B4F47;
     font-size: 20px;
@@ -173,76 +151,39 @@
     text-align: center; 
     padding:25px 0px ;
 }
-.strays-item-second{
-    background-color: rgba(255, 255, 255, 0.5);
-    margin-top: -530px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
+.strays a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
 }
-.strays-card-second{
-    background-color: #ffffff;
-    overflow: hidden;
-    margin: 0px 150px;
-    border: 2px solid #7FCCDA ;
-    border-radius: 20px;   
+@media screen and (min-width:768px) {
+    .strays-container{
+        width: 700px;
+        margin: 0 auto;
+      }
 }
-.strays-name-second{    
-    border-radius: 20px;
-    margin: 0px auto;
-    width: 100px;
-    padding: 10px 0px;
-    text-align: center;
-    letter-spacing: 5px;
-    text-indent: 5px;
-    font-size: 24px;
-    color: #ffffff;
-    background-color: #7FCCDA ;
+@media screen and (min-width:1024px) {
+    .strays{
+        background-image: url(../pic/index-background03.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .strays-container{
+        width: 900px;
+        margin: 0 auto;
+    }
+    
 }
-.strays-txt-second{
-    background-color: #ffffff;
-    color: #8B4F47;
-    font-size: 16px;
-    letter-spacing: 2px;
-    line-height: 40px;
-    text-align: center; 
-    padding:25px 0px ;
-}
-.strays-item-third{
-    margin-top: -420px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    z-index: 1;
-}
-.strays-card-third{
-    background-color: #ffffff;
-    overflow: hidden;
-    border: 1px solid #7FCCDA ;
-    border-radius: 20px;   
-}
-.strays-name-third{    
-    border-radius: 20px;
-    margin: 0px auto;
-    width: 100px;
-    padding: 10px 0px;
-    text-align: center;
-    letter-spacing: 5px;
-    text-indent: 5px;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #7FCCDA ;
-}
-.strays-txt-third{
-    background-color: #ffffff;
-    color: #8B4F47;
-    font-size: 12px;
-    letter-spacing: 2px;
-    line-height: 30px;
-    text-align: center; 
-    padding:25px 0px ;
+@media screen and (min-width:1200px) {
+    .strays-container{
+        width: 1100px;
+        margin: 0 auto;
+      }
+    
 }
 /* ------------------------------------------------------精選菜單 */
 .menu{
