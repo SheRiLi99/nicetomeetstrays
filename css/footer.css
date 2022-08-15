@@ -1,19 +1,6 @@
 footer{
     background-color: #8B4F47;
 }
-.footer-container{
-    max-width: 1200px;
-    margin: 0px auto;
-    padding: 50px 0px;
-    display: flex;
-    flex-wrap: wrap;
-}
-.footer-contact{
-    box-sizing: border-box;
-    margin: auto;
-    border-right: 2px solid #FFECDD;
-    width: 30%;
-}
 .footer-contact a{
     letter-spacing: 2px;
     line-height: 50px;
@@ -22,12 +9,18 @@ footer{
     text-decoration: none;
     color: #FFECDD;
 }
+.footer-contact{
+    
+    margin: auto;
+    font-family:'cwTeXYen', sans-serif;
+    border-right: 2px solid #FFECDD;
+    
+}
 .footer-information{
-    width: 70%;
     display: flex;
     flex-wrap: wrap;
-    box-sizing: border-box;
-    padding: 0px 100px;
+    font-family:'cwTeXYen', sans-serif;
+    padding: 0px 50px;
 }
 .footer-introduce{
     color: #FFECDD;
@@ -36,31 +29,101 @@ footer{
     margin-bottom: 30px;
 }
 .footer-taipei{
-    width: 35%;
     color: #FFECDD;
     letter-spacing: 2px;
     line-height: 20px;
-    margin: 0px 192px 30px 0px;
+    margin: 0px 10px 30px 10px;
 }
 .footer-taichung{
-    width: 35%;
     color: #FFECDD;
     letter-spacing: 2px;
     line-height: 20px;
-    margin-bottom: 30px;
+    margin: 0px 10px 30px 10px;
 }
 .footer-tainan{
-    width: 35%;
     color: #FFECDD;
     letter-spacing: 2px;
     line-height: 20px;
-    margin: 0px 192px 0px 0px;
+    margin: 0px 10px 30px 10px;
 }
-.footer-sns{
-    width: 35%;
-    padding-top: 60px;
+.copyright{
+    text-align: center;
+    margin: 30px auto 0px auto;
+    color: #FFECDD;
+    line-height: 20px;
+    font-size: 12px;
+    font-family:'cwTeXYen', sans-serif;
 }
-.footer-sns img{
-    display: block;
-    width: 100%;
+@media screen and (min-width:768px) {
+
+}
+@media screen and (min-width:1024px) {
+
+}
+@media screen and (min-width:1200px) {
+    .footer-container{
+        max-width: 1200px;
+        margin: 0px auto;
+        padding: 50px 0px 20px 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-contact{
+        box-sizing: border-box;
+        margin: auto;
+        font-family:'cwTeXYen', sans-serif;
+        border-right: 2px solid #FFECDD;
+        width: 30%;
+    }
+    .footer-information{
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        font-family:'cwTeXYen', sans-serif;
+        box-sizing: border-box;
+        padding: 0px 100px;
+    }
+    .footer-introduce{
+        color: #FFECDD;
+        letter-spacing: 2px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    .footer-taipei{
+        width: 35%;
+        color: #FFECDD;
+        letter-spacing: 2px;
+        line-height: 20px;
+        margin: 0px 192px 30px 0px;
+    }
+    .footer-taichung{
+        width: 33%;
+        color: #FFECDD;
+        letter-spacing: 2px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    .footer-tainan{
+        width: 33%;
+        color: #FFECDD;
+        letter-spacing: 2px;
+        line-height: 20px;
+        margin: 0px 192px 0px 0px;
+    }
+    .footer-sns{
+        width: 33%;
+        padding-top: 60px;
+    }
+    .footer-sns img{
+        display: block;
+        width: 100%;
+    }
+    .copyright{
+        text-align: center;
+        margin: 50px auto 0px auto;
+        color: #FFECDD;
+        line-height: 20px;
+        font-size: 12px;
+        font-family:'cwTeXYen', sans-serif;
+    }
 }
