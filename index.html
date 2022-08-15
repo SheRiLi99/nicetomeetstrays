@@ -62,7 +62,7 @@
     <section class="strays">
         <h2 class="strays-title">等家浪浪</h2>
         <ul class="strays-container">
-            <li class="active">
+            <li>
                 <img src="pic/strays-01.png" alt="">
                 <h3 class="strays-name">憨吉</h3>
                 <p class="strays-txt">約2019年6月出生<br>男生/已結紮<br>慢熟型</p>
@@ -93,6 +93,7 @@
                 <a href="strays.html"></a>
             </li>
         </ul>
+        <a class="strays-more" href="strays.html">更多浪浪</a>
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/slick.js"></script>
         <script>
@@ -106,8 +107,6 @@
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 2,
-                        infinite: true,
-                        dots: true
                     }
                 },{
                     breakpoint: 768,
@@ -123,38 +122,48 @@
                     }
                 }]
             });
-            
         </script>
-        
     </section>
 <!-- ----------------------------------------------------------精選菜單 -->
     <section class="menu">
         <div class="menu-container">
             <h2 class="menu-maintitle">精選菜單</h2>
             <div class="menu-item">
-                <div class="menu-food">
-                    <div class="menu-pic"><img src="pic/menu-food.jpg" alt=""></div>
+                <div class="menu-card ">
+                    <div class="menu-pic">
+                        <a href="menu.html">
+                            <img src="pic/menu-food.jpg" alt="">
+                        </a>
+                    </div>
                     <h3 class="menu-title">主食</h3>
                     <p class="menu-txt">
                         唐揚咖哩雞飯<br>紅牌蒂蒂海鮮燉飯<br>白酒蛤蠣義大利麵<br>火辣豬豬義大利麵
                     </p>
                 </div>
-                <div class="menu-dessert">
-                    <div class="menu-pic"><img src="pic/menu-dessert.jpg" alt=""></div>
+                <div class="menu-card">
+                    <div class="menu-pic">
+                        <a href="menu.html">
+                            <img src="pic/menu-dessert.jpg" alt="">
+                        </a>
+                    </div>
                     <h3 class="menu-title">甜點</h3>
                     <p class="menu-txt">
                         重乳酪蛋糕<br>冰火焦糖布丁<br>珍珠奶茶蛋糕<br>冰火熔岩布朗尼
                     </p>
                 </div>
-                <div class="menu-drink">
-                    <div class="menu-pic"><img src="pic/menu-drink.jpg" alt=""></div>
+                <div class="menu-card">
+                    <div class="menu-pic">
+                        <a href="menu.html">
+                            <img src="pic/menu-drink.jpg" alt="">
+                        </a>
+                    </div>
                     <h3 class="menu-title">飲品</h3>
                     <p class="menu-txt">
                         榛果拿鐵<br>蜂蜜醋茶<br>香醇可可<br>奶蓋國寶茶
                     </p>
                 </div>
             </div>
-            <a href="menu.html">完整菜單</a>
+            <a class="menu-more" href="menu.html">完整菜單</a>
         </div>
     </section>
 <!-- ---------------------------------------------------------周邊商品 -->
