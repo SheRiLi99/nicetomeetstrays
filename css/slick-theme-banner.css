@@ -16,16 +16,38 @@
     src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
-
-.slick-prev,
-.slick-next
-{
+.slick-prev{
     font-size: 0;
     line-height: 0;
+
     position: absolute;
     top: 50%;
 
     display: block;
+
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: #7FCCDA;
+    border: none;
+    outline: none;
+    background:transparent;
+}
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+    margin-top: -20%;
+    /* position: absolute;
+    top: 50%;
+    right: 0%; */
+    margin-left: 90%;
+
+    display: none;
 
     width: 50px;
     height: 50px;
@@ -120,7 +142,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: 10px;
 
     display: block;
 
@@ -138,10 +160,12 @@
 
     display: inline-block;
 
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
     margin: 0 5px;
     padding: 0;
+    border-radius: 50%;
 
     cursor: pointer;
 }
@@ -186,7 +210,7 @@
     width: 20px;
     height: 20px;
 
-    content: '•';
+    content: '';
     text-align: center;
 
     opacity: .25;

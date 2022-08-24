@@ -2,15 +2,15 @@
 /* ----------------------------------------------------首頁 */
 .index{
     background-image: url(../pic/index-background04.png);
-        background-repeat: no-repeat;
-        background-position: 50% 0%;
-        padding-top: 70px;
-        width: 100%;
-        height: 1350px;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    width: 100%;
+    height: 1350px;
 }
 .index-pic{
     width: 200px;
-    margin: 150px auto;
+    margin: 70px auto;
+    padding-top: 150px;
 }
 .index-pic img{
     padding-bottom: 10px;
@@ -43,13 +43,14 @@
     }
     .index-pic{
         width: 280px;
-        margin: 200px 40% 0% 60%;
+        margin: 70px 40% 0% 60%;
+        padding-top: 200px;
     }
 }
 @media screen and (min-width:1200px) {
     .index-pic{
         width: 280px;
-        margin: 200px 35% 0% 65%;
+        margin: 70px 35% 0% 65%;
     }
     .slogan{
         text-align: center;
@@ -193,6 +194,7 @@
         background-image: url(../pic/index-background03.png);
         background-repeat: no-repeat;
         background-size: contain;
+        background-position: 0% 0%;
     }
     .strays-container{
         width: 900px;
@@ -298,6 +300,8 @@
         background-image: url(../pic/index-background05.png);
         background-repeat: no-repeat;
         background-size: contain;
+        background-position: 0 100%;
+        
     }
     .menu-item{
         display: flex;

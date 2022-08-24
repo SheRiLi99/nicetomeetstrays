@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/commodity.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme-banner.css">
 </head>
 <body>
     <h1 class="sr-only">遇見浪浪</h1>
@@ -33,120 +35,45 @@
         </ul>
     </header>
 <!-- ---------------------------------------------------banner -->
-    <div class="banner">
-        <div class="banner-pic">
-            <img src="pic/commodity-banner.jpg" alt="">
-        </div>
-    </div>
+    <section class="banner">
+        <div><img src="pic/commodity-banner01.jpg" alt=""></div>
+        <div><img src="pic/commodity-banner02.jpg" alt=""></div>
+        <div><img src="pic/commodity-banner03.jpg" alt=""></div>
+        <div><img src="pic/commodity-banner04.jpg" alt=""></div>
+        <div><img src="pic/commodity-banner05.jpg" alt=""></div>
+    </section>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script>
+        $('.banner').slick({
+            autoplay: true,
+            autoplaySpeed: 4000,
+            dots: true,
+        });
+    </script>
+
 <!-- -------------------------------------------------------商品 -->
+    
     <div class="commodity">
         <h2 class="commodity-title">周邊商品</h2>
+        <input type="checkbox" name="" id="sideMenu-active" />
+        <div class="sideMenu">
+            <form>
+                <input type="search" placeholder="請輸入搜尋名稱" />
+                <button><i class="fas fa-search"></i></button>
+            </form>
+            <nav>
+                <a href="#"><i class="fas fa-sitemap"></i>金魚系列 VII</a>
+                <a href="#"><i class="fas fa-chalkboard"></i>側邊選單</a>
+                <a href="#"><i class="fas fa-book-reader"></i>非常常見</a>
+                <a href="#"><i class="fas fa-user-graduate"></i>不會不行</a>
+                <a href="#"><i class="fas fa-trophy"></i>切了就會</a>
+            </nav>
+            <label for="sideMenu-active">
+                <i class="fas fa-angle-right"></i>
+            </label>
+        </div>
         <div class="commodity-container">
-            <div class="commodity-card">
-                <div class="commodity-pic">
-                    <img src="pic/commodity-cup.jpg" alt="">
-                </div>
-                <h3 class="commodity-name">馬克杯</h3>
-                <p class="commodity-txt">
-                    材質:陶瓷<br>
-                    顏色:白 黑<br>
-                    價錢:150$
-                </p>
-                <div class="commodity-contact">
-                    <a href="#">商品詳情</a>
-                    <a href="#">加入購物車</a>
-                </div>
-            </div>
-            <div class="commodity-card">
-                <div class="commodity-pic">
-                    <img src="pic/commodity-cup.jpg" alt="">
-                </div>
-                <h3 class="commodity-name">馬克杯</h3>
-                <p class="commodity-txt">
-                    材質:陶瓷<br>
-                    顏色:白 黑<br>
-                    價錢:150$
-                </p>
-                <div class="commodity-contact">
-                    <a href="#">商品詳情</a>
-                    <a href="#">加入購物車</a>
-                </div>
-            </div>
-            <div class="commodity-card">
-                <div class="commodity-pic">
-                    <img src="pic/commodity-cup.jpg" alt="">
-                </div>
-                <h3 class="commodity-name">馬克杯</h3>
-                <p class="commodity-txt">
-                    材質:陶瓷<br>
-                    顏色:白 黑<br>
-                    價錢:150$
-                </p>
-                <div class="commodity-contact">
-                    <a href="#">商品詳情</a>
-                    <a href="#">加入購物車</a>
-                </div>
-            </div>
-            <div class="commodity-card">
-                <div class="commodity-pic">
-                    <img src="pic/commodity-cup.jpg" alt="">
-                </div>
-                <h3 class="commodity-name">馬克杯</h3>
-                <p class="commodity-txt">
-                    材質:陶瓷<br>
-                    顏色:白 黑<br>
-                    價錢:150$
-                </p>
-                <div class="commodity-contact">
-                    <a href="#">商品詳情</a>
-                    <a href="#">加入購物車</a>
-                </div>
-            </div>
-            <div class="commodity-card">
-                <div class="commodity-pic">
-                    <img src="pic/commodity-cup.jpg" alt="">
-                </div>
-                <h3 class="commodity-name">馬克杯</h3>
-                <p class="commodity-txt">
-                    材質:陶瓷<br>
-                    顏色:白 黑<br>
-                    價錢:150$
-                </p>
-                <div class="commodity-contact">
-                    <a href="#">商品詳情</a>
-                    <a href="#">加入購物車</a>
-                </div>
-            </div>
-            <div class="commodity-card">
-                <div class="commodity-pic">
-                    <img src="pic/commodity-cup.jpg" alt="">
-                </div>
-                <h3 class="commodity-name">馬克杯</h3>
-                <p class="commodity-txt">
-                    材質:陶瓷<br>
-                    顏色:白 黑<br>
-                    價錢:150$
-                </p>
-                <div class="commodity-contact">
-                    <a href="#">商品詳情</a>
-                    <a href="#">加入購物車</a>
-                </div>
-            </div>
-            <div class="commodity-card">
-                <div class="commodity-pic">
-                    <img src="pic/commodity-cup.jpg" alt="">
-                </div>
-                <h3 class="commodity-name">馬克杯</h3>
-                <p class="commodity-txt">
-                    材質:陶瓷<br>
-                    顏色:白 黑<br>
-                    價錢:150$
-                </p>
-                <div class="commodity-contact">
-                    <a href="#">商品詳情</a>
-                    <a href="#">加入購物車</a>
-                </div>
-            </div>
             <div class="commodity-card">
                 <div class="commodity-pic">
                     <img src="pic/commodity-cup.jpg" alt="">

@@ -6,7 +6,7 @@
 }
 /* ----------------------------------------------banner */
 .banner{
-    padding-top: 80px;
+    padding-top: 70px;
     width: 100%;
 }
 .banner-pic img{
@@ -14,12 +14,50 @@
     width: 100%;
 }
 /* -------------------------------------------商品 */
+.sideMenu{
+    position: relative;
+}
+label {
+    width: 20px;
+    height: 80px;
+    background-color: #d1d1d1;
+    color: #686666;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 5px 0 5px rgba(23, 23, 54, 0.6);
+}
+#sideMenu-active:checked + .sideMenu {
+    transform: translateX(0);
+    label .fas {
+        transform: scaleX(-1);
+    }
+}
+#sideMenu-active {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.sideMenu {
+    width: 300px;
+    height: 100%;
+    background-color: #ff7575;
+    border-right: 3px solid #d1d1d1;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    box-shadow: 5px 0 5px rgba(23, 23, 54, 0.6);
+    position: relative;
+    transform: translateX(-100%);
+    transition: 0.5s;
+}
 .commodity{
-    background-image: url(../pic/strays-background-01.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -500px 400px;
-    width: 100%;
+
 }
 .commodity-title{
     margin: 100px 0px;
@@ -30,10 +68,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 .commodity-container{
-    max-width: 1200px;
-    margin: 0px auto;
-    display: flex;
-    flex-wrap: wrap;
+
 }
 .commodity-card{
     width: 20%;
