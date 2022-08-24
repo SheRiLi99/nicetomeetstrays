@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 .main-nav a.commodity-button{
     color:#FFB091 ;
 }
@@ -14,15 +15,21 @@
     width: 100%;
 }
 /* -------------------------------------------商品 */
+.commodity{
+    position: relative;
+}
 .sideMenu {
     width: 300px;
     height: 100%;
-    background-color: #ff7575;
-    border-right: 3px solid #d1d1d1;
+    background-color: #FFB091;
+    border-right: 3px solid #A13630;
     display: flex;
     flex-direction: column;
     padding: 50px 0;
-    box-shadow: 5px 0 5px rgba(#303c4d, 0.6);
+    box-shadow: 5px 0 5px rgba(23, 23, 54, 0.6);
+    position: relative;
+    transform: translateX(-100%);
+    transition: 0.5s;
 }
 form {
     display: flex;
@@ -55,6 +62,8 @@ nav a {
     padding: 20px 10px;
     position: relative;
     font-weight: 300;
+    font-family:'cwTeXYen', sans-serif;
+    text-decoration: none;
 }
 nav .fas {
     margin-right: 0px;
@@ -77,7 +86,7 @@ nav .fas + a::before {
 label {
     width: 20px;
     height: 80px;
-    background-color: #d1d1d1;
+    background-color: #A13630;
     color: #686666;
     position: absolute;
     right: -20px;
@@ -100,39 +109,23 @@ label {
     opacity: 0;
     z-index: -1;
 }
-.sideMenu {
-    width: 300px;
-    height: 100%;
-    background-color: #ff7575;
-    border-right: 3px solid #d1d1d1;
-    display: flex;
-    flex-direction: column;
-    padding: 50px 0;
-    box-shadow: 5px 0 5px rgba(23, 23, 54, 0.6);
-    position: relative;
-    transform: translateX(-100%);
-    transition: 0.5s;
-}
-.commodity{
 
-}
+
 .commodity-title{
     margin: 100px 0px;
     text-align: center;
     font-size: 36px;
+    font-family:'cwTeXYen', sans-serif;
     letter-spacing: 5px;
     color: #A13630;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
-.commodity-container{
-
-}
 .commodity-card{
-    width: 20%;
-    margin: 0px 2.5% 100px 2.5%;
+    position: relative;
+    width: 40%;
+    margin: 0px 5% 100px 5%;
 }
 .commodity-pic{
-    border-radius: 30px;
     margin-bottom: 20px;
     overflow: hidden;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
@@ -140,51 +133,37 @@ label {
 .commodity-pic img{
     display: block;
     width: 100%;
-    border-radius: 30px;
+    transition: .3s;
     transform: scale(1,1)
 }
 .commodity-pic img:hover{
+    transition: .3s;
     transform: scale(1.2,1.2)
 }
 .commodity-name{
     color: #2F3C3C;
-    margin: 0px auto 10px auto;
+    margin: 0px 0px 0px 10px;
     letter-spacing: 2px;
-    width: 66px;
-    font-size: 20px;
+    font-size: 24px;
+    font-family:'cwTeXYen', sans-serif;
     padding-bottom: 5px;
     border-bottom: 2px solid #7FCCDA;
 }
 .commodity-txt{
     color: #505050;
-    text-align: center;
-    padding: 10px;
-    font-size: 14PX;
+    padding: 10px 0px 0px 10px;
+    font-size: 18PX;
+    font-family:'cwTeXYen', sans-serif;
     letter-spacing: 2px;
-    line-height: 20px;
+    line-height: 25px;
     margin-bottom: 10px;
 }
-.commodity-contact{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.commodity-card a{
-    margin: 0px 10px;
-    display: block;
-    font-size: 14px;
-    letter-spacing: 2px;
-    text-indent: 2px;
-    width: 100px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    background-color: #7FCCDA;
-    text-decoration: none;
-    color:#ffffff ;
-    border-radius: 20px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-}
-.commodity-card a:hover{
-    background-color: #FFB091;
+.commodity-price{
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    font-size: 26px;
+    font-family:'cwTeXYen', sans-serif;
+    color: #7FCCDA;
+    letter-spacing: 1px;
 }
