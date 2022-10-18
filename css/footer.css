@@ -1,21 +1,6 @@
 footer{
     background-color: #8B4F47;
 }
-.footer-contact a{
-    letter-spacing: 2px;
-    line-height: 50px;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    color: #FFECDD;
-}
-.footer-contact{
-    
-    margin: auto;
-    font-family:'cwTeXYen', sans-serif;
-    border-right: 2px solid #FFECDD;
-    
-}
 .footer-information{
     display: flex;
     flex-wrap: wrap;
@@ -26,6 +11,7 @@ footer{
     color: #FFECDD;
     letter-spacing: 2px;
     line-height: 20px;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 .footer-taipei{
